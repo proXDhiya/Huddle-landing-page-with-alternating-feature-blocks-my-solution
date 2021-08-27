@@ -28,6 +28,7 @@ body {
     font-size: var(--font-size);
     color: var(--Very-Dark-Cyan);
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 h1,
@@ -43,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 190%;
+    font-size: 150%;
     margin: 20px 0;
 }
 
@@ -62,20 +63,21 @@ p {
 
 .btn {
     display: inline-block;
-    padding: 13px 60px;
+    padding: 16px 65px;
     border-radius: 30px;
     font-size: 80%;
     text-decoration: none;
+    font-weight: var(--open-sans-bold-weight);
 }
 
 .btn-nav {
     background-color: #fff;
-    box-shadow: 0px 0px 5px rgb(214, 214, 214);
+    box-shadow: 0px 3px 10px rgb(214, 214, 214);
 }
 
 .btn-pink {
     background-color: var(--Pink);
-    box-shadow: 0px 0px 5px rgb(231, 208, 235);
+    box-shadow: 0px 3px 10px rgb(172, 172, 172);
     color: #fff;
 }
 
@@ -99,7 +101,7 @@ nav {
     height: 120px;
 
     display: grid;
-    grid-template-columns: 220px 1fr 200px;
+    grid-template-columns: 220px 1fr 210px;
     grid-template-rows: 100%;
 }
 
@@ -151,7 +153,7 @@ nav a {
 /******************************main********************************/
 
 main {
-    margin: 100px auto 250px auto !important;
+    margin: 100px auto 0px auto !important;
     height: auto;
     width: auto;
 }
@@ -160,6 +162,7 @@ main {
     border-radius: 10px;
     border: 1px solid rgb(231, 231, 231);
     box-shadow: 0px 0px 5px rgb(231, 231, 231);
+    background-color: #fff;
 
     display: grid;
     grid-template-columns: 60% 40%;
@@ -190,5 +193,62 @@ main {
 #secend-box {
     grid-template-columns: 40% 60%;
 }
+
+.box-contact {
+    background-color: #fff;
+    width: 650px;
+    height: 220px;
+
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 220px; /*temp*/
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 0px 0px 5px rgb(231, 231, 231);
+    border-radius: 15px;
+}
+
+.box-contact h2 {
+    text-align: center;
+    padding: 25px 0 15px 0;
+}
+
+.box-contact a {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/******************************************************************/
+/******************************footer******************************/
+
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    height: 550px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 30% repeat(3, 1fr);
+    grid-template-rows: 70px 200px;
+    grid-gap: 10px;
+
+    position: relative;
+    top: 60%;
+    transform: translate(0%, -50%);
+}
+
+#logo {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    width: 180px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
 
 /******************************************************************/
