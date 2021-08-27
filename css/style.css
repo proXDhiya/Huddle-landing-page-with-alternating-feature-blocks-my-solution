@@ -27,6 +27,7 @@ body {
     font-weight: var(--open-sans-normal-weight);
     font-size: var(--font-size);
     color: var(--Very-Dark-Cyan);
+    background-color: #fff;
 }
 
 h1,
@@ -39,6 +40,11 @@ h3 {
 h1 {
     font-size: 300%;
     margin: 30px 0;
+}
+
+h2 {
+    font-size: 190%;
+    margin: 20px 0;
 }
 
 p {
@@ -120,7 +126,6 @@ nav a {
 .header-content {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: calc(100vh - 120px - 30px);
     grid-gap: 80px;
 
     margin-top: 30px;
@@ -140,6 +145,50 @@ nav a {
 
 .header-content div a {
     margin-top: 20px;
+}
+
+/******************************************************************/
+/******************************main********************************/
+
+main {
+    margin: 100px auto 250px auto !important;
+    height: auto;
+    width: auto;
+}
+
+.box-module {
+    border-radius: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 0px 0px 5px rgb(231, 231, 231);
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 350px;
+
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 50px auto;
+}
+
+.box-module div {
+    width: 70%;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-module div p {
+    color: var(--Grayish-Blue);
+}
+
+.box-module img {
+    width: 340px;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+#secend-box {
+    grid-template-columns: 40% 60%;
 }
 
 /******************************************************************/
