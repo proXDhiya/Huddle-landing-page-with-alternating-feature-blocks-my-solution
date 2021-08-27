@@ -22,3 +22,124 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--open-sans);
+    font-weight: var(--open-sans-normal-weight);
+    font-size: var(--font-size);
+    color: var(--Very-Dark-Cyan);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--poppins);
+    font-weight: var(--poppins-weight);
+}
+
+h1 {
+    font-size: 300%;
+    margin: 30px 0;
+}
+
+p {
+    word-spacing: 5px;
+    line-height: 28px;
+}
+
+.page-container {
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+/********************************btn*******************************/
+
+.btn {
+    display: inline-block;
+    padding: 13px 60px;
+    border-radius: 30px;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.btn-nav {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgb(214, 214, 214);
+}
+
+.btn-pink {
+    background-color: var(--Pink);
+    box-shadow: 0px 0px 5px rgb(231, 208, 235);
+    color: #fff;
+}
+
+/******************************************************************/
+
+
+/******************************header******************************/
+
+header {
+    background-color: var(--Very-Pale-Cyan);
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+
+    display: grid;
+    grid-template-columns: 220px 1fr 200px;
+    grid-template-rows: 100%;
+}
+
+nav img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: flex-end;
+    align-self: center;
+
+    width: 220px;
+    height: auto;
+}
+
+nav a {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: flex-start;
+    align-self: center;
+
+    color: var(--Very-Dark-Cyan);
+    font-weight: var(--open-sans-bold-weight);
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: calc(100vh - 120px - 30px);
+    grid-gap: 80px;
+
+    margin-top: 30px;
+}
+
+.header-content img {
+    width: 90%;
+    height: auto;
+
+    align-self: center;
+}
+
+.header-content div {
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.header-content div a {
+    margin-top: 20px;
+}
+
+/******************************************************************/
