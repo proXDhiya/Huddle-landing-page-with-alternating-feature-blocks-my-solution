@@ -50,7 +50,7 @@ h2 {
 
 p {
     word-spacing: 5px;
-    line-height: 21px;
+    line-height: 25px;
 }
 
 .page-container {
@@ -145,7 +145,8 @@ nav a {
     grid-template-columns: 40% 60%;
     grid-gap: 80px;
 
-    margin-top: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .header-content img {
@@ -254,6 +255,8 @@ footer {
     top: 60%;
     transform: translate(0%, -50%);
 
+    width: 80%;
+    margin: 0 auto;
     color: #fff;
     font-size: 70%;
 }

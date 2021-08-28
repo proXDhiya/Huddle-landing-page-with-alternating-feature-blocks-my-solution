@@ -1,0 +1,77 @@
+@media (max-width: 1230px) {
+    body {
+        font-size: 16px;
+    }
+
+    p {
+        line-height: 21px;
+    }
+
+    .text-and-icon img {
+        top: 6px;
+        width: 12px;
+        height: auto;
+    }
+
+    .social-media-icons div a ion-icon {
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+    }
+
+    .box-module {
+        grid-template-rows: 300px;
+    }
+}
+
+@media (max-width: 1130px) {
+    body {
+        font-size: 14px;
+    }
+
+    p {
+        line-height: 17px;
+    }
+
+    .text-and-icon img {
+        top: 5px;
+        width: 10px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 12px;
+    }
+
+    .text-and-icon p {
+        line-height: 12px;
+    }
+
+    .social-media-icons p {
+        font-size: 50%;
+    }
+
+    .box-module {
+        grid-template-rows: 270px;
+    }
+}
+
+@media (max-width: 950px) {
+    header {
+        background-image: url(../images/bg-hero-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    nav {
+        height: 80px;
+        grid-template-columns: 200px 1fr 200px;
+    }
+
+    nav img {
+        
+    }
+}
