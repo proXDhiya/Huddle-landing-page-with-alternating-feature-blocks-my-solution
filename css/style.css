@@ -50,7 +50,7 @@ h2 {
 
 p {
     word-spacing: 5px;
-    line-height: 28px;
+    line-height: 21px;
 }
 
 .page-container {
@@ -226,18 +226,21 @@ main {
 
 footer {
     background-color: var(--Very-Dark-Cyan);
-    height: 550px;
+    height: 500px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: 30% repeat(3, 1fr);
-    grid-template-rows: 70px 200px;
+    grid-template-rows: 50px 200px;
     grid-gap: 10px;
 
     position: relative;
     top: 60%;
     transform: translate(0%, -50%);
+
+    color: #fff;
+    font-size: 70%;
 }
 
 #logo {
@@ -250,5 +253,44 @@ footer {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
+.text-and-icon {
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin-bottom: 20px;
+}
+
+.text-and-icon img {
+    position: relative;
+    top: 8px;
+}
+
+.footer-text {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-media-icons div a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media-icons div a ion-icon {
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.social-media-icons p {
+    font-size: 80%;
+    position: absolute;
+    bottom: 0;
+}
 
 /******************************************************************/
